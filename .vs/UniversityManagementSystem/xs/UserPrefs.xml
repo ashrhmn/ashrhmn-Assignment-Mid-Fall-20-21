@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{2D9AEC9C-94F6-4B85-9A2D-BCEEC46F9E72}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityManagementSystem/Program.cs">
+    <Files>
+      <File FileName="UniversityManagementSystem/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UniversityManagementSystem" expanded="True">
+            <Node name="UniversityManagementSystem" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UniversityManagementSystem FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
