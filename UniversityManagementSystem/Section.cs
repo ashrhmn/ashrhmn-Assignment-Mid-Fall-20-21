@@ -12,6 +12,7 @@ namespace UniversityManagementSystem
 
         public Section()
         {
+            faculty = new ArrayList();
         }
 
         public Section(string name, string id, int duration, ArrayList faculty)

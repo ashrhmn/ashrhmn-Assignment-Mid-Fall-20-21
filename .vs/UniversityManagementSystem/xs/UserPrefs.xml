@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{2D9AEC9C-94F6-4B85-9A2D-BCEEC46F9E72}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityManagementSystem/Section.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityManagementSystem/Faculty.cs">
     <Files>
       <File FileName="UniversityManagementSystem/Program.cs" Line="9" Column="52" />
       <File FileName="UniversityManagementSystem/Department.cs" Line="20" Column="10" />
       <File FileName="UniversityManagementSystem/Course.cs" Line="8" Column="9" />
-      <File FileName="UniversityManagementSystem/Section.cs" Line="6" Column="1" />
+      <File FileName="UniversityManagementSystem/Section.cs" Line="28" Column="77" />
+      <File FileName="UniversityManagementSystem/Faculty.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UniversityManagementSystem" expanded="True">
             <Node name="UniversityManagementSystem" expanded="True">
-              <Node name="Section.cs" selected="True" />
+              <Node name="Faculty.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -10,6 +10,7 @@ namespace UniversityManagementSystem
 
         public Department()
         {
+            courses = new ArrayList();
         }
 
         public Department(string name, string id, ArrayList courses)
