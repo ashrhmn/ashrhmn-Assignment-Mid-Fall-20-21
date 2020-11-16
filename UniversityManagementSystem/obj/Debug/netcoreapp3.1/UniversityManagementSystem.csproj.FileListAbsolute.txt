@@ -1,0 +1,12 @@
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/bin/Debug/netcoreapp3.1/UniversityManagementSystem.deps.json
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/bin/Debug/netcoreapp3.1/UniversityManagementSystem.runtimeconfig.json
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/bin/Debug/netcoreapp3.1/UniversityManagementSystem.runtimeconfig.dev.json
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/bin/Debug/netcoreapp3.1/UniversityManagementSystem.dll
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/bin/Debug/netcoreapp3.1/UniversityManagementSystem.pdb
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.csprojAssemblyReference.cache
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.AssemblyInfoInputs.cache
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.AssemblyInfo.cs
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.csproj.CoreCompileInputs.cache
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.dll
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.pdb
+/Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.genruntimeconfig.cache
