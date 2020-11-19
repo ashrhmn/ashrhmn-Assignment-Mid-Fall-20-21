@@ -23,5 +23,14 @@ namespace UniversityManagementSystem
         public string Name { get => name; set => name = value; }
         public string Id { get => id; set => id = value; }
         public ArrayList Courses { get => courses; set => courses = value; }
+
+        public void showCourses()
+        {
+            int c = 0;
+            foreach(Course course in Courses)
+            {
+                Console.WriteLine((++c)+". "+course.Name);
+            }
+        }
     }
 }

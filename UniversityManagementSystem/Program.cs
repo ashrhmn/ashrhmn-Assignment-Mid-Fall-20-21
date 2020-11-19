@@ -5,6 +5,57 @@ namespace UniversityManagementSystem
 {
     class Program
     {
+        public int userInput()
+        {
+            return Convert.ToInt32(Console.ReadLine());
+        }
+
+        public Boolean addCourse(Department dept,Course course)
+        {
+            if(dept != null && dept.Courses != null)
+            {
+                dept.Courses.Add(course);
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        public Boolean addSection(Course course, Section section)
+        {
+            if(course != null && course.Section != null)
+            {
+                course.Section.Add(section);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        public Boolean assignFaculty(Section section, Faculty faculty)
+        {
+            if(faculty.loadInWeek()+(section.Duration*section.NClassInWeek) > 21)
+            {
+                return false;
+            }
+            else
+            {
+                if(section!= null && faculty.Section != null)
+                {
+                    section.Faculty = faculty;
+                    faculty.Section.Add(section);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
         static void Main(string[] args)
         {
             //    Section asec = new Section();
@@ -19,6 +70,7 @@ namespace UniversityManagementSystem
             //    fac.Section = asec;
             //    asec.Faculty.Add(fac);
             //
+            Program p = new Program();
 
             Department cse = new Department();
             cse.Name = "Computer Science and Engineering";
@@ -79,11 +131,16 @@ namespace UniversityManagementSystem
 
             Console.Write("Enter Option : ");
 
-            int opt = Convert.ToInt32(Console.ReadLine());
+            int opt = p.userInput();
 
             Department dept = departments[opt - 1];
 
-            Console.WriteLine(dept.Name);
+            Console.WriteLine("\n"+dept.Name);
+            Console.WriteLine("\nCourses:\n");
+            dept.showCourses();
+
+            opt = p.userInput();
+
 
 
         }

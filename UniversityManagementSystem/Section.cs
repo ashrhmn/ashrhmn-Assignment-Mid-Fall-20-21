@@ -24,6 +24,13 @@ namespace UniversityManagementSystem
             faculty.Section.Add(this);
             this.Faculty = faculty;
         }
+        public Section(string name, string id, int duration, int nClassInWeek)
+        {
+            this.Name = name;
+            this.Id = id;
+            this.Duration = duration;
+            this.nClassInWeek = nClassInWeek;
+        }
 
         public string Name { get => name; set => name = value; }
         public string Id { get => id; set => id = value; }
