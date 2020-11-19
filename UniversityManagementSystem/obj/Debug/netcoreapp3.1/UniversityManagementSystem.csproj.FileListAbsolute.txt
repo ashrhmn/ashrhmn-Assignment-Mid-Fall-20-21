@@ -10,3 +10,16 @@
 /Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.dll
 /Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.pdb
 /Users/ash/Google Drive/SCs/VisualStudio/project/UniversityManagementSystem/UniversityManagementSystem/obj/Debug/netcoreapp3.1/UniversityManagementSystem.genruntimeconfig.cache
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\bin\Debug\netcoreapp3.1\UniversityManagementSystem.exe
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\bin\Debug\netcoreapp3.1\UniversityManagementSystem.deps.json
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\bin\Debug\netcoreapp3.1\UniversityManagementSystem.runtimeconfig.json
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\bin\Debug\netcoreapp3.1\UniversityManagementSystem.runtimeconfig.dev.json
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\bin\Debug\netcoreapp3.1\UniversityManagementSystem.dll
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\bin\Debug\netcoreapp3.1\UniversityManagementSystem.pdb
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.csprojAssemblyReference.cache
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.AssemblyInfoInputs.cache
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.AssemblyInfo.cs
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.csproj.CoreCompileInputs.cache
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.dll
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.pdb
+H:\drive\SCs\VisualStudio\project\UniversityManagementSystem\UniversityManagementSystem\obj\Debug\netcoreapp3.1\UniversityManagementSystem.genruntimeconfig.cache

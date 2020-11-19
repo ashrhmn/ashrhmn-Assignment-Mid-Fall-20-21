@@ -11,6 +11,7 @@ namespace UniversityManagementSystem
 
         public Course()
         {
+            section = new ArrayList();
         }
 
         public Course(string name, string id, ArrayList section)

@@ -8,6 +8,7 @@ namespace UniversityManagementSystem
         {
             Console.WriteLine("Hello World Test!");
             Section asec = new Section();
+            Section bsec = new Section();
 
             asec.Name = "OOP2 H";
             asec.Id = "2133";
