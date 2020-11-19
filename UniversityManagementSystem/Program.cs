@@ -189,9 +189,9 @@ namespace UniversityManagementSystem
                             String name = Console.ReadLine();
                             Console.WriteLine("Section ID : ");
                             String id = Console.ReadLine();
-                            Console.WriteLine("Section ID : ");
+                            Console.WriteLine("Class Duration : ");
                             int duration = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine("Section ID : ");
+                            Console.WriteLine("Number of classes in a week : ");
                             int numberOfClass = Convert.ToInt32(Console.ReadLine());
 
                             if (p.addSection(course, new Section(name, id,duration,numberOfClass)))
@@ -205,20 +205,42 @@ namespace UniversityManagementSystem
                         }
                         else if(opt == 2)
                         {
-                            Console.WriteLine("Sections with no faculty");
+                            Console.WriteLine("\n\nSections with no faculty");
                             ArrayList noFaculty = new ArrayList();
+                            int j = 0;
                             for(int i = 0; i < course.Section.Count; ++i)
                             {
                                 Section section = (Section) course.Section[i];
                                 if(section.Faculty == null)
                                 {
                                     noFaculty.Add(section);
+                                    Console.WriteLine((++j)+". ");
                                     section.showInfo();
                                 }
                             }
 
-                            opt = p.userInput();
 
+                            Section secToBeAdded = (Section)noFaculty[p.userInput() - 1];
+
+                            Console.WriteLine("Choose Faculty:\n");
+
+                            for(int i = 0; i < faculties.Length; ++i)
+                            {
+                                Console.Write((i+1)+". ");
+                                faculties[i].showInfo();
+                            }
+
+
+                            Faculty facultyToBeAssigned = faculties[p.userInput() - 1];
+
+                            if (p.assignFaculty(secToBeAdded, facultyToBeAssigned))
+                            {
+                                Console.WriteLine("Faculty assigned Successfully");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Assigning failed");
+                            }
 
                         }
                         else if(opt == 0)
