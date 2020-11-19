@@ -28,7 +28,7 @@ namespace UniversityManagementSystem
         public void showCourseInfo()
         {
             Console.WriteLine("Course Name : " + this.Name);
-            Console.WriteLine("Course ID : " + this.Id);
+            Console.WriteLine("Course ID : " + this.Id+"\n");
 
             if(Section == null || Section.Count == 0)
             {
@@ -36,7 +36,7 @@ namespace UniversityManagementSystem
             }
             else
             {
-                Console.WriteLine("Total number of section : "+Section.Count);
+                Console.WriteLine("Total number of section : "+Section.Count+"\n");
                 foreach (Section section in Section)
                 {
                     section.showInfo();

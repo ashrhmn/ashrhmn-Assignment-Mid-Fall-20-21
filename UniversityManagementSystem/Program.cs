@@ -141,7 +141,9 @@ namespace UniversityManagementSystem
 
             opt = p.userInput();
 
+            Course course = (Course) dept.Courses[opt - 1];
 
+            course.showCourseInfo();
 
         }
     }
