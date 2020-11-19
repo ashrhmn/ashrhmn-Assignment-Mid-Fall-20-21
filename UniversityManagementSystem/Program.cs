@@ -7,6 +7,7 @@ namespace UniversityManagementSystem
     {
         public int userInput()
         {
+            Console.WriteLine("\nEnter Option : ");
             return Convert.ToInt32(Console.ReadLine());
         }
 
@@ -56,6 +57,13 @@ namespace UniversityManagementSystem
                 }
             }
         }
+
+        public void modifyMenu()
+        {
+            Console.WriteLine("1. Add Section");
+            Console.WriteLine("2. Assign Faculty to Section");
+            Console.WriteLine("0. Exit");
+        }
         static void Main(string[] args)
         {
             //    Section asec = new Section();
@@ -90,14 +98,14 @@ namespace UniversityManagementSystem
             Faculty hasib = new Faculty("Hasib Hasan", "1014");
             Faculty viktor = new Faculty("Viktor Stanny Rozario", "1015");
 
-            Section oop1A = new Section("OOP1-A", "6685", 1,3, sazzad);
-            Section oop2A = new Section("OOP2-A", "9865", 1, 3, tanveer);
-            Section oop2B = new Section("OOP2-B", "9865", 1, 3, sazzad);
-            Section oop2C = new Section("OOP2-C", "9865", 1, 3, tanveer);
-            Section oop1B = new Section("OOP1-B", "4825", 1, 3, viktor);
-            Section webtechA = new Section("Web Technology-A", "5698", 1, 3, mishu);
-            Section webtechB = new Section("Web Technology-B", "5699", 1, 3, hasib);
-            Section webtechC = new Section("Web Technology-C", "5697", 1, 3, viktor);
+            Section oop1A = new Section("A", "6685", 1,3, sazzad);
+            Section oop2A = new Section("A", "9865", 1, 3, tanveer);
+            Section oop2B = new Section("B", "9865", 1, 3, sazzad);
+            Section oop2C = new Section("C", "9865", 1, 3, tanveer);
+            Section oop1B = new Section("B", "4825", 1, 3, viktor);
+            Section webtechA = new Section("A", "5698", 1, 3, mishu);
+            Section webtechB = new Section("B", "5699", 1, 3, hasib);
+            Section webtechC = new Section("C", "5697", 1, 3, viktor);
 
             Course oop1 = new Course("Object Oriented Programming 1", "", new ArrayList { oop1A, oop1B });
             Course oop2 = new Course("Object Oriented Programming 2", "", new ArrayList { oop2A, oop2B, oop2C });
@@ -117,34 +125,112 @@ namespace UniversityManagementSystem
             }*/
 
             Department[] departments = {cse,eee,bba };
+            Faculty[] faculties = { sazzad,mishu,tanveer,hasib,viktor};
 
-
-            Console.WriteLine("University Management System");
-            Console.WriteLine("============================\n\n");
-            Console.WriteLine("Departments:\n");
-            int c = 0;
-            foreach (Department department in departments)
+            while (true)
             {
-                Console.Write(++c+". ");
-                Console.WriteLine(department.Name);
+                Console.WriteLine("University Management System");
+                Console.WriteLine("============================\n\n");
+                Console.WriteLine("Departments:\n");
+                int c = 0;
+                foreach (Department department in departments)
+                {
+                    Console.Write(++c + ". ");
+                    Console.WriteLine(department.Name);
+                }
+                Console.WriteLine("0. Exit");
+
+
+                int opt = p.userInput();
+
+                if (opt == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    Department dept = departments[opt - 1];
+
+                    Console.WriteLine("\n" + dept.Name);
+                    Console.WriteLine("\nCourses:\n");
+                    dept.showCourses();
+                    Console.WriteLine("0. Add Course");
+
+                    opt = p.userInput();
+
+                    if (opt == 0)
+                    {
+                        Console.WriteLine("New Course:\n");
+                        Console.WriteLine("Course Name :");
+                        String name = Console.ReadLine();
+                        Console.WriteLine("Course ID :");
+                        String id = Console.ReadLine();
+
+                        if(p.addCourse(dept, new Course(name, id)))
+                        {
+                            Console.WriteLine(name+" course added successfully");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Course add failed");
+                        }
+                    }
+                    else
+                    {
+                        Course course = (Course)dept.Courses[opt - 1];
+                        course.showCourseInfo();
+                        p.modifyMenu();
+                        opt = p.userInput();
+
+                        if (opt == 1)
+                        {
+                            Console.WriteLine("Add Section");
+                            Console.WriteLine("Section Name : ");
+                            String name = Console.ReadLine();
+                            Console.WriteLine("Section ID : ");
+                            String id = Console.ReadLine();
+                            Console.WriteLine("Section ID : ");
+                            int duration = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Section ID : ");
+                            int numberOfClass = Convert.ToInt32(Console.ReadLine());
+
+                            if (p.addSection(course, new Section(name, id,duration,numberOfClass)))
+                            {
+                                Console.WriteLine(name + " section added successfully");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Section add failed");
+                            }
+                        }
+                        else if(opt == 2)
+                        {
+                            Console.WriteLine("Sections with no faculty");
+                            ArrayList noFaculty = new ArrayList();
+                            for(int i = 0; i < course.Section.Count; ++i)
+                            {
+                                Section section = (Section) course.Section[i];
+                                if(section.Faculty == null)
+                                {
+                                    noFaculty.Add(section);
+                                    section.showInfo();
+                                }
+                            }
+
+                            opt = p.userInput();
+
+
+                        }
+                        else if(opt == 0)
+                        {
+
+                        }
+
+                    }
+                }
+
+            
             }
-
-            Console.Write("Enter Option : ");
-
-            int opt = p.userInput();
-
-            Department dept = departments[opt - 1];
-
-            Console.WriteLine("\n"+dept.Name);
-            Console.WriteLine("\nCourses:\n");
-            dept.showCourses();
-
-            opt = p.userInput();
-
-            Course course = (Course) dept.Courses[opt - 1];
-
-            course.showCourseInfo();
-
         }
     }
 }

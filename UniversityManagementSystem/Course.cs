@@ -20,6 +20,12 @@ namespace UniversityManagementSystem
             this.id = id;
             this.section = section;
         }
+        public Course(string name, string id)
+        {
+            this.name = name;
+            this.id = id;
+            section = new ArrayList();
+        }
 
         public string Name { get => name; set => name = value; }
         public string Id { get => id; set => id = value; }

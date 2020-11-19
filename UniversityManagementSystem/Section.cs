@@ -43,7 +43,10 @@ namespace UniversityManagementSystem
             Console.WriteLine("Section Name : " + this.Name);
             Console.WriteLine("Section ID : " + this.Id);
             Console.WriteLine("Class Duration : " + this.Duration + " hour");
-            this.Faculty.showInfo();
+            if(this.faculty != null)
+            {
+                this.Faculty.showInfo();
+            }
         }
     }
 }
