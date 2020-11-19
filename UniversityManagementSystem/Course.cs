@@ -24,5 +24,25 @@ namespace UniversityManagementSystem
         public string Name { get => name; set => name = value; }
         public string Id { get => id; set => id = value; }
         public ArrayList Section { get => section; set => section = value; }
+
+        public void showCourseInfo()
+        {
+            Console.WriteLine("Course Name : " + this.Name);
+            Console.WriteLine("Course ID : " + this.Id);
+
+            if(Section == null || Section.Count == 0)
+            {
+                Console.WriteLine("No Section");
+            }
+            else
+            {
+                Console.WriteLine("Total number of section : "+Section.Count);
+                foreach (Section section in Section)
+                {
+                    section.showInfo();
+                    Console.WriteLine();
+                }
+            }
+        }
     }
 }
